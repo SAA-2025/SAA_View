@@ -1,0 +1,20 @@
+.short-divider {
+    width: 60%;
+    margin: auto;
+}
+
+.dropdown-menu {
+    border-color: rgba(143, 129, 129, 0.16) !important;
+}
+
+.hr-theme {
+    border: none;
+    height: 1px;
+    background-color: rgba(143, 129, 129, 0.16);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #F15A32, #8C191B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

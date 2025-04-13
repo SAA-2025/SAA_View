@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+.md-body h1,
+.md-body h2,
+.md-body h3,
+.md-body h4,
+.md-body h5,
+.md-body h6,
+.md-body p { 
+  color: #b11c1c !important;
+}
+
+a {
+    color: #1B1B1F !important;
+}
+
+a::after{
+    background-color: #fff !important;
+}
+
+.bg-theme {
+    background-color: #FA1F00;
+    color: white !important;
+}
+
+ul li::marker {
+    color: #FA1F00;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+code {
+    color: #FA1F00 !important;
+    background-color: rgba(250, 29, 0, 0.08);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+pre {
+    background-color: rgba(250, 29, 0, 0.08);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+pre code {
+    color: #FA1F00 !important;
+    background-color: transparent;
+    font-weight: lighter;
+}

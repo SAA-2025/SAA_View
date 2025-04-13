@@ -5,7 +5,7 @@ import Courses from "./pages/courses/Courses";
 import Services from "./pages/services/Services";
 import Accouting from "./pages/services/Accouting";
 import Manufacturig from "./pages/industry/Manufacturig";
-import { NotFound } from "./pages/not_found/NotFound";
+// import { NotFound } from "./pages/not_found/NotFound";
 
 function App() {
   return (

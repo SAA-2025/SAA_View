@@ -16,7 +16,7 @@ const DetailHero = ({header, body, image}: DetailHeroProps) => {
             <h1 className="display-3 mb-4 fw-bold">{header}</h1>
             <p>{body}</p>
             <a 
-              href='/services/accounting#contact-section' 
+              href='/SAA_View/services/accounting#contact-section' 
               className="btn btn-light fw-bold text-accent"
             >
               დაგვეკონტაქტე

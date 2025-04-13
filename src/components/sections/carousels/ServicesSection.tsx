@@ -14,42 +14,42 @@ const services = [
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "calculator",
-    link: "/services/accounting",
+    link: "/SAA_View/services/accounting",
   },
   {
     title: "აუდიტი",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "file-list",
-    link: "/services",
+    link: "/SAA_View/services",
   },
   {
     title: "გადასახადები",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "money-dollar-box",
-    link: "/services",
+    link: "/SAA_View/services",
   },
   {
     title: "პროგრამების დანერგვა",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "shake-hands",
-    link: "/services",
+    link: "/SAA_View/services",
   },
   {
     title: "იურიდიული",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "auction",
-    link: "/services",
+    link: "/SAA_View/services",
   },
   {
     title: "არარეზიდენტები",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "building",
-    link: "/services",
+    link: "/SAA_View/services",
   },
 ];
 
@@ -66,7 +66,7 @@ const ServicesSection = () => {
       </div>
       <CardCarousel cards={services} />
       <div className="col d-flex justify-content-center">
-        <Button text="ყველა" href="/services" />
+        <Button text="ყველა" href="/SAA_View/services" />
       </div>
     </section>
   );

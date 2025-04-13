@@ -8,43 +8,43 @@ import NavBarLogo from "./NavBarLogo";
 const NavBar = () => {
   const dropdownItems = {
     aboutUs: [
-      {text: "ისტორია", link: "/about"},
-      {text: "გუნდი", link: "/about"},
-      {text: "ხედვა", link: "/about"},
-      {text: "რატომ ჩვენ?", link: "/about"},
-      {text: "ოფისი", link: "/about"},
-      {text: "მედია ჩვენზე", link: "/about"},
-      {text: "კლიენტები", link: "/about"}
+      {text: "ისტორია", link: "/SAA_View/about"},
+      {text: "გუნდი", link: "/SAA_View/about"},
+      {text: "ხედვა", link: "/SAA_View/about"},
+      {text: "რატომ ჩვენ?", link: "/SAA_View/about"},
+      {text: "ოფისი", link: "/SAA_View/about"},
+      {text: "მედია ჩვენზე", link: "/SAA_View/about"},
+      {text: "კლიენტები", link: "/SAA_View/about"}
     ],
     courses: [
-      {text: "ყველა", link: "/courses"},
-      {text: "უნივერსალური", link: "/courses"},
-      {text: "მთავარი ბუღალტერი", link: "/courses"},
-      {text: "ACCA", link: "/courses"},
-      {text: "ორისი", link: "/courses"},
-      {text: "ოფისი", link: "/courses"},
-      {text: "ანგარიშგება", link: "/courses"}
+      {text: "ყველა", link: "/SAA_View/courses"},
+      {text: "უნივერსალური", link: "/SAA_View/courses"},
+      {text: "მთავარი ბუღალტერი", link: "/SAA_View/courses"},
+      {text: "ACCA", link: "/SAA_View/courses"},
+      {text: "ორისი", link: "/SAA_View/courses"},
+      {text: "ოფისი", link: "/SAA_View/courses"},
+      {text: "ანგარიშგება", link: "/SAA_View/courses"}
     ],
     industry: [
-      {text: "წარმოება", link: "/industry/manufacturing"},
-      {text: "მომსახურეობა", link: "/about"},
-      {text: "ტურიზმი", link: "/about"},
-      {text: "მშენებლობა", link: "/about"},
-      {text: "მედიცინა", link: "/about"},
-      {text: "კვება", link: "/about"},
-      {text: "სასტუმრო", link: "/about"},
-      {text: "ვაჭრობა", link: "/about"},
-      {text: "ლოკისტიკა", link: "/about"},
-      {text: "მედია", link: "/about"}
+      {text: "წარმოება", link: "/SAA_View/industry/manufacturing"},
+      {text: "მომსახურეობა", link: "/SAA_View/about"},
+      {text: "ტურიზმი", link: "/SAA_View/about"},
+      {text: "მშენებლობა", link: "/SAA_View/about"},
+      {text: "მედიცინა", link: "/SAA_View/about"},
+      {text: "კვება", link: "/SAA_View/about"},
+      {text: "სასტუმრო", link: "/SAA_View/about"},
+      {text: "ვაჭრობა", link: "/SAA_View/about"},
+      {text: "ლოკისტიკა", link: "/SAA_View/about"},
+      {text: "მედია", link: "/SAA_View/about"}
     ],
     services: [
-      {text: "ყველა", link: "/services"},
-      {text: "ბუღალტერია", link: "/services"},
-      {text: "აუდიტი", link: "/services"},
-      {text: "გადასახადები", link: "/services"},
-      {text: "პროგრამების დანერგვა", link: "/services"},
-      {text: "იურიდიული", link: "/services"},
-      {text: "არარეზიდენტები", link: "/services"}
+      {text: "ყველა", link: "/SAA_View/services"},
+      {text: "ბუღალტერია", link: "/SAA_View/services"},
+      {text: "აუდიტი", link: "/SAA_View/services"},
+      {text: "გადასახადები", link: "/SAA_View/services"},
+      {text: "პროგრამების დანერგვა", link: "/SAA_View/services"},
+      {text: "იურიდიული", link: "/SAA_View/services"},
+      {text: "არარეზიდენტები", link: "/SAA_View/services"}
     ],
   };
 

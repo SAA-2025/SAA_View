@@ -7,35 +7,35 @@ const courses = [
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "global",
-    link: "/courses/",
+    link: "/SAA_View/courses/",
   },
   {
     title: "მთავარი ბუღალტერი",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "user-2",
-    link: "/courses/",
+    link: "/SAA_View/courses/",
   },
   {
     title: "ACCA",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "calculator",
-    link: "/courses/",
+    link: "/SAA_View/courses/",
   },
   {
     title: "ACCA",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "calculator",
-    link: "/courses/",
+    link: "/SAA_View/courses/",
   },
   {
     title: "ACCA",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "calculator",
-    link: "/courses/",
+    link: "/SAA_View/courses/",
   },
 ];
 
@@ -57,7 +57,7 @@ const CoursesSection = () => {
       </div>
       <CardCarousel cards={courses} />
       <div className="col d-flex justify-content-center">
-        <Button text="ყველა" href="/courses" />
+        <Button text="ყველა" href="/SAA_View/courses" />
       </div>
     </section>
   );

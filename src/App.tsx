@@ -12,7 +12,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/SAA_View" element={<HomePage/>}/>
+          <Route path="/SAA_View/" element={<HomePage/>}/>
           <Route path="/SAA_View/about" element={<AboutUs/>}/>
           <Route path="/SAA_View/courses" element={<Courses/>}/>
           <Route path="/SAA_View/services" element={<Services/>}/>

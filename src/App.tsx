@@ -18,8 +18,7 @@ function App() {
           <Route path="/SAA_View/services" element={<Services/>}/>
           <Route path="/SAA_View/services/accounting" element={<Accouting/>}/>
           <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig/>}/>
-          <Route path="*" element={<NotFound/>}/>
-          {/* <Route path="/courses" element={<Courses/>}/> */}
+          {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
       </BrowserRouter>
     </>

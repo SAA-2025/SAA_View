@@ -4,7 +4,6 @@ import heroImage from "../../assets/images/hero-image.png";
 import Footer from "../../layout/footer/Footer";
 import BlogSection from "./BlogSection";
 import ContactSection from "../../components/sections/ContactSection";
-import CoursesSection from "../../components/sections/carousels/CoursesSection";
 import TeamSection from "../../components/sections/our_team/TeamSection";
 import ServicesSection from "../../components/sections/carousels/ServicesSection";
 import ClientRewievs from "../about_us/ClientRewievs";

@@ -1,10 +1,8 @@
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import CarouselCard from '../cards/CarouselCard';
-import './CardCarousel.css'; // for custom styles
+import './CardCarousel.css';
 import CarouselNavButton from '../buttons/CarouselNavButton';
 
 interface CardCarouselProps {
@@ -18,8 +16,30 @@ interface CardCarouselProps {
 
 const CardCarousel = ({ cards }: CardCarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
+  const [isLargeScreen, setIsLargeScreen] = useState(
+    typeof window !== 'undefined' && window.innerWidth >= 992
+  );
+  const prevRef = useRef<HTMLButtonElement>(null);
+  const nextRef = useRef<HTMLButtonElement>(null);
+  const swiperRef = useRef<any>(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 992);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // Set Swiper nav buttons after mount
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.params.navigation.prevEl = prevRef.current;
+      swiperRef.current.params.navigation.nextEl = nextRef.current;
+      swiperRef.current.navigation.init();
+      swiperRef.current.navigation.update();
+    }
+  }, [swiperRef.current]);
 
   return (
     <div className="my-4 position-relative card-carousel-wrapper">
@@ -27,17 +47,8 @@ const CardCarousel = ({ cards }: CardCarouselProps) => {
         className="card-swiper"
         modules={[Navigation]}
         spaceBetween={30}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
         onSwiper={(swiper) => {
-          setTimeout(() => {
-            swiper.params.navigation.prevEl = prevRef.current;
-            swiper.params.navigation.nextEl = nextRef.current;
-            swiper.navigation.init();
-            swiper.navigation.update();
-          });
+          swiperRef.current = swiper;
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         breakpoints={{
@@ -50,9 +61,8 @@ const CardCarousel = ({ cards }: CardCarouselProps) => {
         }}
       >
         {cards.map((card, index) => {
-          const isMiddleCard =
-            window.innerWidth >= 992 && index === activeIndex + 1;
-          const isActive = window.innerWidth < 992 && index === activeIndex;
+          const isMiddleCard = isLargeScreen && index === activeIndex + 1;
+          const isActive = !isLargeScreen && index === activeIndex;
 
           return (
             <SwiperSlide key={index}>
@@ -63,10 +73,9 @@ const CardCarousel = ({ cards }: CardCarouselProps) => {
           );
         })}
       </Swiper>
-      
-      {/* Navigation buttons */}
-      <CarouselNavButton ref={prevRef} direction='prev'/>
-      <CarouselNavButton ref={nextRef} direction='next'/>
+
+      <CarouselNavButton ref={prevRef} direction="prev" />
+      <CarouselNavButton ref={nextRef} direction="next" />
     </div>
   );
 };

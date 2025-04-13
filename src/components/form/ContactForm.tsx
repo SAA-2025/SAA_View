@@ -5,7 +5,7 @@ import FormTextArea from "./FormTextArea";
 import FormHeader from "./FormHeader";
 import FormControlGroup from "./FormControlGroup";
 import { useEffect } from "react";
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
 
 const ContactForm = () => {
 
@@ -29,16 +29,16 @@ const ContactForm = () => {
     });
   }, []);
 
-  const sendEmail = (e: Event) => {
-    e.preventDefault();
+  // const sendEmail = (e: Event) => {
+  //   e.preventDefault();
 
-    emailjs.sendForm('service_id', 'template_id', e.target, 'public_key')
-  }
+  //   emailjs.sendForm('service_id', 'template_id', e.target, 'public_key')
+  // }
   
   return (
     <div>
       <FormHeader title="დაგვიკავშირდი" header="რამე ტექსტი" />
-      <form className=" needs-validation" noValidate onSubmit={sendEmail}>
+      <form className=" needs-validation" noValidate >
         <FormControlGroup
           formControlItems={[
             {

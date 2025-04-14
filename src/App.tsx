@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import AboutUs from "./pages/about_us/AboutUs";
 import Courses from "./pages/courses/Courses";
@@ -12,13 +12,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/SAA_View/" element={<HomePage/>}/>
-          <Route path="/SAA_View/about" element={<AboutUs/>}/>
-          <Route path="/SAA_View/courses" element={<Courses/>}/>
-          <Route path="/SAA_View/services" element={<Services/>}/>
-          <Route path="/SAA_View/services/accounting" element={<Accouting/>}/>
-          <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig/>}/>
-          <Route path="SAA_View/*" element={<NotFound/>}/>
+          <Route path="/" element={<HomePage/>}/>
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/courses" element={<Courses/>}/>
+          <Route path="/services" element={<Services/>}/>
+          <Route path="/services/accounting" element={<Accouting/>}/>
+          <Route path="/industry/manufacturing" element={<Manufacturig/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </>

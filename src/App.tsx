@@ -5,7 +5,7 @@ import Courses from "./pages/courses/Courses";
 import Services from "./pages/services/Services";
 import Accouting from "./pages/services/Accouting";
 import Manufacturig from "./pages/industry/Manufacturig";
-// import { NotFound } from "./pages/not_found/NotFound";
+import { NotFound } from "./pages/not_found/NotFound";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/SAA_View/services" element={<Services/>}/>
           <Route path="/SAA_View/services/accounting" element={<Accouting/>}/>
           <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig/>}/>
-          {/* <Route path="*" element={<NotFound/>}/> */}
+          <Route path="SAA_View/*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
     </>

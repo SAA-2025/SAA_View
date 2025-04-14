@@ -10,7 +10,7 @@ import { NotFound } from "./pages/not_found/NotFound";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter> */}
         <Routes>
           <Route path="/SAA_View/" element={<HomePage/>}/>
           <Route path="/SAA_View/about" element={<AboutUs/>}/>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig/>}/>
           <Route path="SAA_View/*" element={<NotFound/>}/>
         </Routes>
-      </BrowserRouter>
+      {/* </BrowserRouter> */}
     </>
   );
 }

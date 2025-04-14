@@ -55,7 +55,7 @@ const TeamSection = () => {
               <div className="col-6 position-relative">
                 <TeamMemberCard />
                 <TeamMemberCard />
-                <CarouselNavButton href="/SAA_View/about" direction="next"/>
+                <CarouselNavButton href="/SAA_View/#/`about" direction="next"/>
               </div>
             </div>
           </div>

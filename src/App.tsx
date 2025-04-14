@@ -11,13 +11,13 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutUs />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/accounting" element={<Accouting />} />
-        <Route path="/industry/manufacturing" element={<Manufacturig />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/SAA_View/" element={<HomePage />} />
+        <Route path="/SAA_View/about" element={<AboutUs />} />
+        <Route path="/SAA_View/courses" element={<Courses />} />
+        <Route path="/SAA_View/services" element={<Services />} />
+        <Route path="/SAA_View/services/accounting" element={<Accouting />} />
+        <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig />} />
+        <Route path="/SAA_View/*" element={<NotFound />} />
       </Routes>
     </>
   );

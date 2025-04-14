@@ -14,42 +14,42 @@ const services = [
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "calculator",
-    link: "/SAA_View/services/accounting",
+    link: "https://saa-2025.github.io/SAA_View/services/accounting",
   },
   {
     title: "აუდიტი",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "file-list",
-    link: "/SAA_View/services",
+    link: "https://saa-2025.github.io/SAA_View/services",
   },
   {
     title: "გადასახადები",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "money-dollar-box",
-    link: "/SAA_View/services",
+    link: "https://saa-2025.github.io/SAA_View/services",
   },
   {
     title: "პროგრამების დანერგვა",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "shake-hands",
-    link: "/SAA_View/services",
+    link: "https://saa-2025.github.io/SAA_View/services",
   },
   {
     title: "იურიდიული",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "auction",
-    link: "/SAA_View/services",
+    link: "https://saa-2025.github.io/SAA_View/services",
   },
   {
     title: "არარეზიდენტები",
     content:
       "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.",
     icon: "building",
-    link: "/SAA_View/services",
+    link: "https://saa-2025.github.io/SAA_View/services",
   },
 ];
 
@@ -66,7 +66,7 @@ const ServicesSection = () => {
       </div>
       <CardCarousel cards={services} />
       <div className="col d-flex justify-content-center">
-        <Button text="ყველა" href="/SAA_View/services" />
+        <Button text="ყველა" href="https://saa-2025.github.io/SAA_View/services" />
       </div>
     </section>
   );

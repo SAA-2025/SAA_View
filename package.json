@@ -1,15 +1,15 @@
 {
-  "homepage": "https://SAA-2025.github.io/SAA_View",
+  "homepage": "https://SAA-2025.github.io/SAA_View/",
   "name": "saa-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

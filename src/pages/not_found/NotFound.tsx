@@ -6,7 +6,7 @@ import Footer from "../../layout/footer/Footer";
 export const NotFound = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
-      window.location.href = "/";
+      window.location.href = "/SAA_View/";
     }, 3000);
 
     return () => clearTimeout(timeout); 

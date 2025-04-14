@@ -10,7 +10,7 @@ const BlogSection = () => {
                     <BlogCarousel/>
                 </div>
                 <div className="d-flex justify-content-center">
-                    <Button text="ამბები" href="/SAA_View"/>
+                    <Button text="ამბები" href="/"/>
                 </div>
             </div>
         </section>

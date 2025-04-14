@@ -43,7 +43,7 @@ const TeamSection = () => {
               id inventore molestiae fuga saepe minima.
             </p>
             <div className="col d-flex justify-content-center mt-5">
-              <Button text="მეტი დეტალი" href="/SAA_View/about" />{" "}
+              <Button text="მეტი დეტალი" href="/about" />{" "}
             </div>
           </div>
           <div className="col-lg-6 col-12 p-5">
@@ -55,7 +55,7 @@ const TeamSection = () => {
               <div className="col-6 position-relative">
                 <TeamMemberCard />
                 <TeamMemberCard />
-                <CarouselNavButton href="/SAA_View/#/`about" direction="next"/>
+                <CarouselNavButton href="/#/`about" direction="next"/>
               </div>
             </div>
           </div>

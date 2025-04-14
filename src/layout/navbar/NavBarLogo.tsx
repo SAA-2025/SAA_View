@@ -4,7 +4,7 @@ interface NavBarLogoProps {
 
 const NavBarLogo = ({logo}: NavBarLogoProps) => {
     return (
-        <a className="navbar-brand" href="/SAA_View/#">
+        <a className="navbar-brand" href="/">
             <img src={logo} alt="logo goes here" />
         </a>
     )

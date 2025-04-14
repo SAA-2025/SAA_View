@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import AboutUs from "./pages/about_us/AboutUs";
 import Courses from "./pages/courses/Courses";
@@ -11,6 +11,7 @@ function App() {
   return (
     <>
       {/* <BrowserRouter> */}
+      <HashRouter>
         <Routes>
           <Route path="/SAA_View/" element={<HomePage/>}/>
           <Route path="/SAA_View/about" element={<AboutUs/>}/>
@@ -20,6 +21,7 @@ function App() {
           <Route path="/SAA_View/industry/manufacturing" element={<Manufacturig/>}/>
           <Route path="SAA_View/*" element={<NotFound/>}/>
         </Routes>
+      </HashRouter>
       {/* </BrowserRouter> */}
     </>
   );

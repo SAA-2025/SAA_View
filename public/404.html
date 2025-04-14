@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
     <script>
-      const path = window.location.pathname.replace('/SAA_View', '');
-      window.location.href = '/SAA_View/#' + path;
+      const path = window.location.pathname;
+      const search = window.location.search;
+      const hash = window.location.hash;
+      const newUrl = '/SAA_View/' + path.replace('/SAA_View/', '') + search + hash;
+      window.location.replace(newUrl);
     </script>
   </head>
   <body>

@@ -14,13 +14,13 @@ const Footer = () => {
     ]
 
     const navItems = [
-        { text: "მთავარი", link: "/" },
-        { text: "ჩვენ შესახებ", link: "/about" },
-        { text: "სერვისები", link: "/services" },
-        { text: "ინდუსტრია", link: "/industry" },
-        { text: "კურსი", link: "/courses" },
-        { text: "ბლოგი", link: "/blogs" },
-        { text: "კონტაქტი", link: "/#contacts" },
+        { text: "მთავარი", link: "/SAA_View/" },
+        { text: "ჩვენ შესახებ", link: "/SAA_View/about" },
+        { text: "სერვისები", link: "/SAA_View/services" },
+        { text: "ინდუსტრია", link: "/SAA_View/industry" },
+        { text: "კურსი", link: "/SAA_View/courses" },
+        { text: "ბლოგი", link: "/SAA_View/blogs" },
+        { text: "კონტაქტი", link: "/SAA_View/#contacts" },
     ]
 
     const style: React.CSSProperties = {

@@ -9,31 +9,31 @@ const employees = [
     name: "სახელი გვარი",
     role: "სახლელი გვარი",
     image: "https://randomuser.me/api/portraits/men/75.jpg",
-    link: "/employee/1",
+    link: "/SAA_View/employee/1",
   },
   {
     name: "სახელი გვარი",
     role: "სახლელი გვარი",
     image: "https://randomuser.me/api/portraits/women/65.jpg",
-    link: "/employee/2",
+    link: "/SAA_View/employee/2",
   },
   {
     name: "სახელი გვარი",
     role: "სახლელი გვარი",
     image: "https://randomuser.me/api/portraits/men/32.jpg",
-    link: "/employee/3",
+    link: "/SAA_View/employee/3",
   },
   {
     name: "სახელი გვარი",
     role: "სახლელი გვარი",
     image: "https://randomuser.me/api/portraits/women/22.jpg",
-    link: "/employee/4",
+    link: "/SAA_View/employee/4",
   },
   {
     name: "სახელი გვარი",
     role: "სახლელი გვარი",
     image: "https://randomuser.me/api/portraits/men/48.jpg",
-    link: "/employee/5",
+    link: "/SAA_View/employee/5",
   },
 ];
 

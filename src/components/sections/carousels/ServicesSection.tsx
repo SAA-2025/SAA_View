@@ -66,7 +66,7 @@ const ServicesSection = () => {
       </div>
       <CardCarousel cards={services} />
       <div className="col d-flex justify-content-center">
-        <Button text="ყველა" href="/services" />
+        <Button text="ყველა" href="https://saa-2025.github.io/SAA_View/services" />
       </div>
     </section>
   );

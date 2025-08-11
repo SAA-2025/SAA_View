@@ -1,0 +1,112 @@
+{
+  "hash": "41116657",
+  "configHash": "6d0d749d",
+  "lockfileHash": "15bd0fca",
+  "browserHash": "dfee0fbf",
+  "optimized": {
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "b501a4f6",
+      "needsInterop": true
+    },
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "51e42baa",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "eee9940c",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.mjs",
+      "file": "react-router-dom.js",
+      "fileHash": "93ad5494",
+      "needsInterop": false
+    },
+    "bootstrap/dist/js/bootstrap.min.js": {
+      "src": "../../node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "file": "bootstrap_dist_js_bootstrap__min__js.js",
+      "fileHash": "4be20d1b",
+      "needsInterop": true
+    },
+    "leaflet": {
+      "src": "../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "4eb5d8a6",
+      "needsInterop": true
+    },
+    "yet-another-react-lightbox": {
+      "src": "../../node_modules/yet-another-react-lightbox/dist/index.js",
+      "file": "yet-another-react-lightbox.js",
+      "fileHash": "4e3cc852",
+      "needsInterop": false
+    },
+    "yet-another-react-lightbox/plugins/thumbnails": {
+      "src": "../../node_modules/yet-another-react-lightbox/dist/plugins/thumbnails/index.js",
+      "file": "yet-another-react-lightbox_plugins_thumbnails.js",
+      "fileHash": "f88adf4f",
+      "needsInterop": false
+    },
+    "yet-another-react-lightbox/plugins/zoom": {
+      "src": "../../node_modules/yet-another-react-lightbox/dist/plugins/zoom/index.js",
+      "file": "yet-another-react-lightbox_plugins_zoom.js",
+      "fileHash": "93c68c27",
+      "needsInterop": false
+    },
+    "react-multi-carousel": {
+      "src": "../../node_modules/react-multi-carousel/index.js",
+      "file": "react-multi-carousel.js",
+      "fileHash": "13ad7376",
+      "needsInterop": true
+    },
+    "swiper/react": {
+      "src": "../../node_modules/swiper/swiper-react.mjs",
+      "file": "swiper_react.js",
+      "fileHash": "0c7699ae",
+      "needsInterop": false
+    },
+    "swiper/modules": {
+      "src": "../../node_modules/swiper/modules/index.mjs",
+      "file": "swiper_modules.js",
+      "fileHash": "db724692",
+      "needsInterop": false
+    },
+    "react-leaflet": {
+      "src": "../../node_modules/react-leaflet/lib/index.js",
+      "file": "react-leaflet.js",
+      "fileHash": "a3c97e5d",
+      "needsInterop": false
+    },
+    "@emailjs/browser": {
+      "src": "../../node_modules/@emailjs/browser/es/index.js",
+      "file": "@emailjs_browser.js",
+      "fileHash": "f7c17e62",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-XLOWEJT4": {
+      "file": "chunk-XLOWEJT4.js"
+    },
+    "chunk-PML55YSI": {
+      "file": "chunk-PML55YSI.js"
+    },
+    "chunk-IJS6R5BV": {
+      "file": "chunk-IJS6R5BV.js"
+    },
+    "chunk-4YBAB45U": {
+      "file": "chunk-4YBAB45U.js"
+    },
+    "chunk-GWAROZSO": {
+      "file": "chunk-GWAROZSO.js"
+    },
+    "chunk-V4OQ3NZ2": {
+      "file": "chunk-V4OQ3NZ2.js"
+    }
+  }
+}

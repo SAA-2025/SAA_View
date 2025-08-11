@@ -1,20 +1,11 @@
 import SocialMedia from "../../layout/footer/SocialMedia";
 import ContactsList from "../lists/ContactsList";
 import ContactForm from "../form/ContactForm";
-import contactDecorationImage from "../../assets/images/contact-image.png";
 import Circle from "../shapes/Circle";
 import React from "react";
+import socials from "../../data/socials";
 
 const ContactSection = () => {
-  const socialMedia = [
-    { icon: "twitter", link: "https://x.com" },
-    { icon: "instagram", link: "https://instagram.com" },
-    {
-      icon: "facebook",
-      link: "https://www.facebook.com/profile.php?id=61567478023616",
-    },
-    { icon: "linkedin", link: "https://www.linkedin.com/in/saa-smart-accounting-and-audit-226bba215/ " },
-  ];
 
   const styles = {
     decorationImage: {
@@ -36,7 +27,7 @@ const ContactSection = () => {
             className="col-12 col-md-6 bg-accent p-4 px-5 text-white d-none d-lg-flex flex-column justify-content-between position-relative"
             style={{ overflow: "hidden" }}
           >
-            <img src={contactDecorationImage} alt="Decoration" style={styles.decorationImage} />
+            <img src='/images/contact-image.png' alt="Decoration" style={styles.decorationImage} />
 
             <Circle radius={150} coordinats={{ bottom: -100, right: -50 }}></Circle>
             
@@ -49,7 +40,7 @@ const ContactSection = () => {
               ჩვენი კონტაქტები
             </p>
             <ContactsList />
-            <SocialMedia socials={socialMedia} />
+            <SocialMedia socials={socials} />
           </div>
 
           <div className="col-12 col-lg-6 py-5 px-3 px-lg-5">

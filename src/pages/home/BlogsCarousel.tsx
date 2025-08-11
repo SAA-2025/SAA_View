@@ -1,119 +1,92 @@
-import BlogCard from "../../components/cards/BlogCard";
-import "../../../style.css";
-import "./home_style.css";
-import image from "../../assets/images/blog-card.png";
-import pfp from "../../assets/images/Avatar@2x.png";
-import CarouselNavButton from "../../components/buttons/CarouselNavButton";
-
+import CarouselBlogCard from "../../components/cards/CarouselBlogCard";
+import ResponsiveCarousel from "../../components/carousels/ResponsiveCarousel";
 
 const BlogCarousel = () => {
   const cards = [
     {
       title: "Blog No.1",
       header: "This is card one",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
     {
       title: "Blog No.2",
       header: "This is card two",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
     {
       title: "Blog No.3",
       header: "This is card three",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
     {
       title: "Blog No.4",
       header: "This is card four",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
     {
       title: "Blog No.5",
       header: "This is card five",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
     {
       title: "Blog No.6",
       header: "This is card six",
-      image: image,
+      image: "/images/blog-card.png",
       date: "April 10",
       author: {
         name: "shalva",
         lastName: "baghdavadze",
         position: "CEO",
-        pfp: pfp,
+        pfp: "/images/Avatar@2x.png",
       },
     },
   ];
 
   return (
-    <div id="cardCarousel" className="carousel slide" data-bs-ride="carousel">
-      <div className="carousel-inner">
-        {cards.map((card, idx) => (
-          <div
-            className={`carousel-item ${idx === 0 ? "active" : ""}`}
-            key={idx}
-          >
-            <div className="container">
-              <div className="row">
-                <BlogCard card={card}/>
-              </div>
-            </div>
-          </div>
+    <div className="container">
+      <ResponsiveCarousel
+        displayNavButtons={true}
+        slidesToShow={{ large: 1, medium: 1, small: 1 }}
+      >
+        {cards.map((blog) => (
+          <CarouselBlogCard card={blog} />
         ))}
-      </div>
-
-      <CarouselNavButton
-        direction="prev"
-        className="carousel-control-prev custom-carousel-btn"
-        style={{ zIndex: 2 }}
-        href="#cardCarousel"
-        data-bs-slide="prev"
-      />
-      
-      <CarouselNavButton
-        direction="next"
-        className="carousel-control-next custom-carousel-btn"
-        style={{ zIndex: 2 }}
-        href="#cardCarousel"
-        data-bs-slide="next"
-      />
+      </ResponsiveCarousel>
     </div>
   );
 };

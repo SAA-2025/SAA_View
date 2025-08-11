@@ -1,5 +1,3 @@
-import meshImg from "../../../assets/images/main-hero-mesh.png";
-
 
 interface MainHeroProps {
   header: string;
@@ -8,7 +6,6 @@ interface MainHeroProps {
 }
 
 const MainHero = ({ header, body, image }: MainHeroProps) => {
-  // styles.ts or inside your component file
   const styles = {
     archedDiv: {
       backgroundColor: "white",
@@ -33,7 +30,7 @@ const MainHero = ({ header, body, image }: MainHeroProps) => {
   };
 
   return (
-    <section className="section-padding-top v-80 bg-accent text-white d-flex flex-column">
+    <section className="section-padding-top v-80 bg-accent text-white d-flex flex-column" id="main-hero">
       <div className="container flex-grow-1 d-flex flex-column justify-content-center">
         <div className="row align-items-center">
           <div className="col-12 col-md-7 d-flex flex-column justify-content-center p-4">
@@ -47,7 +44,7 @@ const MainHero = ({ header, body, image }: MainHeroProps) => {
               className="img-fluid rounded position-relative"
               style={{ zIndex: 2 }}
             />
-            <img src={meshImg} alt="mesh bg" style={styles.meshImg} />
+            <img src='/images/main-hero-mesh.png' alt="mesh bg" style={styles.meshImg} />
           </div>
         </div>
       </div>

@@ -1,0 +1,8 @@
+services:
+  saa-front-end:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    restart: unless-stopped

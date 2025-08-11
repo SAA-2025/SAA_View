@@ -1,23 +1,58 @@
-
-
-const TeamMemberCard = () => {
-    return (
-        <div className="card border-0 rounded-3 shadow p-2 mb-4">
-            <img
-                src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
-                alt="team member pfp"
-                className="rounded-2"
-                style={{
-                    objectFit: "cover",
-                    // height: "120px",
-                }}
-            />
-            <div className="card-body text-center">
-                <h6>სახელი გვარი</h6>
-                <p className="mb-0">პოზიცია</p>
-            </div>
-        </div>
-    )
+interface TeamMemberCardProps {
+  name: string;
+  position: string;
+  image: string;
 }
 
-export default TeamMemberCard
+const TeamMemberCard = ({ name, position, image }: TeamMemberCardProps) => {
+  return (
+    <div
+      className="card border-0 rounded-4 shadow p-3 mb-4"
+      style={{ width: "100%", height: "270px" }}
+    >
+      <img
+        src={image}
+        alt="team member pfp"
+        className="rounded-2 mb-2"
+        style={{
+          height: "160px",
+          objectFit: "contain",
+          backgroundColor: "#CDD8DE",
+        }}
+      />
+      <div
+        className="card-body text-center p-0 d-flex flex-column justify-content-center"
+        style={{ overflow: "hidden" }}
+      >
+        <p
+          className="mb-1 fw-semibold text-break"
+          style={{
+            fontSize: "1rem",
+            display: "-webkit-box",
+            WebkitLineClamp: 1,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}
+        >
+          {name}
+        </p>
+        <p
+          className="mb-0 text-secondary text-break"
+          style={{
+            fontSize: "0.85rem",
+            lineHeight: "1.2",
+            display: "-webkit-box",
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: "vertical",
+            overflow: "hidden",
+          }}
+        >
+          {position}
+        </p>
+      </div>
+    </div>
+  );
+};
+
+
+export default TeamMemberCard;

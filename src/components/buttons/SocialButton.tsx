@@ -1,5 +1,4 @@
 import "remixicon/fonts/remixicon.css";
-import './style.css'
 
 interface SocialButtonProps {
     social: {
@@ -15,7 +14,7 @@ const SocialButton = ({ social }: SocialButtonProps) => {
             <a 
                 href={social.link} 
                 target="_blank" 
-                className="btn bg-white text-secondary btn-social"
+                className="btn bg-white d-flex align-items-center justify-content-center text-secondary btn-social"
             >
                 <i className={`ri-${social.icon}-line`}></i>
             </a>

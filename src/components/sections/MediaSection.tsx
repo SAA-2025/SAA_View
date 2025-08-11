@@ -27,7 +27,7 @@ const MediaSection = ({ images }: MediaSectionProps) => {
 
   return (
     <section id="media">
-      <div className="container py-5">
+      <div className="container section-padding">
         <Title title="მედია - ჩვენზე" />
         <div className="row g-2">
           <div className="col-lg-6">

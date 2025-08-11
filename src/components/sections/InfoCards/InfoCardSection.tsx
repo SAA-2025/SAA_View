@@ -2,10 +2,10 @@ import InfoCards from "./InfoCards";
 
 interface InfoCardSectionProps {
   infoCards: {
+    id: string;
     title: string;
     body: string;
     icon: string;
-    link: string;
   }[];
 }
 

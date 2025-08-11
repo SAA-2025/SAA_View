@@ -8,7 +8,7 @@ interface ListHeroProps {
 }
 
 const ListHero = ({header, body, image}: ListHeroProps) => {
-  // styles.ts or inside your component file
+
   const styles = {
     archedDiv: {
       backgroundColor: "white",
@@ -51,4 +51,4 @@ const ListHero = ({header, body, image}: ListHeroProps) => {
   );
 }
 
-export default ListHero
+export default ListHero;

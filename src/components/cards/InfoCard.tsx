@@ -1,17 +1,9 @@
-import "../../../style.css";
+import { InfoCardProps } from "../../lib/infocard.props";
 
-interface InfoCardProps {
-  infoCard: {
-    title: string;
-    body: string;
-    icon: string;
-    link: string;
-  };
-}
 
 const InfoCard = ({ infoCard }: InfoCardProps) => {
   return (
-    <a className="text-decoration-none" href={infoCard.link}>
+    <a className="text-decoration-none" href={`/services/${infoCard.id}`}>
       <div className="card border-0 shadow-lg mb-5 rounded-4 p-3 p-md-4" style={{ maxWidth: "840px" }}>
         <div className="row g-0 align-items-center">
           <div className="col-md-3 d-flex justify-content-center justify-content-md-start">

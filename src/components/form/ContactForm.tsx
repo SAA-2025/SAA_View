@@ -29,16 +29,16 @@ const ContactForm = () => {
     });
   }, []);
 
-  // const sendEmail = (e: Event) => {
-  //   e.preventDefault();
+  const sendEmail = () => {
+    // e.preventDefault();
 
-  //   emailjs.sendForm('service_id', 'template_id', e.target, 'public_key')
-  // }
+    // emailjs.sendForm('service_id', 'template_id', e.target, 'public_key')
+  }
   
   return (
     <div>
       <FormHeader title="დაგვიკავშირდი" header="რამე ტექსტი" />
-      <form className=" needs-validation" noValidate >
+      <form className=" needs-validation" noValidate onSubmit={sendEmail}>
         <FormControlGroup
           formControlItems={[
             {

@@ -15,7 +15,7 @@ const Title = ({title, className, hrWidth, hrDisplay, fontSize}: TitleProps) => 
   return (
     <div className={"row mb-3 "+className}>
         <h2 className={`display-${fontSize || '4'} fw-bold mb-3`}>{regularTitle} <span className="text-accent">{highlightTitle}</span> </h2> 
-        <hr className={`border-5 w-${(hrWidth || 75)} d-${hrDisplay ? 'none' : 'block'}` }/>
+        <hr className={`border-3 w-${(hrWidth || 75)} d-${hrDisplay ? 'none' : 'block'} mt-3`} style={{borderColor: '#bbb'}}/>
     </div>
   )
 }

@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+
+@font-face {
+    font-family: 'Nino-Mtavruli';
+    src: url(./src/assets/fonts/bpg_nino_mtavruli_bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Theme-font';
+    src: url(./src/assets/fonts/azacademiury.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-vh-25 { height: 25vh; }
+.section-vh-30 { height: 30vh; }
+.section-vh-50 { height: 50vh; }
+.section-vh-60 { height: 60vh; }
+.section-vh-75 { height: 75vh; }
+.section-vh-80 { height: 80vh; }
+.section-vh-85 { height: 85vh; }
+.section-vh-90 { height: 90vh; }
+.section-vh-95 { height: 95vh; }
+.section-vh-100 { height: 100vh; }
+
+
+.section-padding {
+    padding-top: 140px !important;
+    padding-bottom: 140px !important;
+}
+
+.section-padding-top {
+    padding-top: 140px;
+}
+
+.section-padding-bottom {
+    padding-bottom: 140px;
+}
+
+.bg-accent {
+    background-color: #FA1F00 !important;
+}
+
+.bg-outline-accent {
+    background-color: transparent;
+    border-color: #FA1F00;
+}
+
+.text-accent {
+    color: #FA1F00 !important;
+}
+
+.bg-outline-accent:hover {
+    background-color: #e91b00 !important;
+    border-color: #e91b00 !important;
+    color: white !important;
+}
+
+.bg-accent:hover {
+    background-color: #e91b00 !important;
+}
+
+ul.custom-bullet {
+    list-style: none; /* Removes default bullets */
+    padding-left: 0;
+}
+
+ul.custom-bullet li {
+    position: relative;
+    padding-left: 20px; /* Space for the custom bullet */
+}
+
+ul.custom-bullet li::before {
+    content: '•'; 
+    position: absolute;
+    left: 0;
+    color: red;
+    font-size: 20px; 
+    line-height: 20px;
+}
+
+
+.industry-title {
+    font-family: 'Nino-Mtavruli';
+    font-weight: bold;
+}
+
+
+
+/* Cartds */
+
+.responsive-rounded {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .responsive-rounded {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0.5rem;
+    }
+}
+
+.infocard-icon {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* About us */
+
+.react-multiple-carousel__arrow--right, 
+.react-multiple-carousel__arrow--left 
+{
+    background-color: red !important;
+    opacity: 60%;
+} 
+
+/* Buttons */
+
+/* Button */
+.btn-social {
+    border-radius: 100px !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 18px;
+}
+
+.btn-social:hover {
+    background-color: #FA1F00 !important;
+    color: white !important;
+}
+
+.btn-theme {
+    background-color: #FA1F00 !important;
+    font-weight: 600;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 48px;
+}
+
+.btn-theme:hover {
+    background-color: #d41e06 !important;
+    color: white;
+}
+
+/* CarouselnavButton */
+.custom-nav-btn {
+    position: absolute;
+    top: calc(50% - 30px);
+    z-index: 10;
+    background-color: #FA1F00;
+    color: white;
+    border: none;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    opacity: 0.9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.custom-prev-btn {
+    left: 0px;
+}
+
+.custom-next-btn {
+    right: 0px;
+}
+
+/* Carousels */
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #eb2208;
+}
+
+.slick-dots li {
+    margin: 0 !important;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+  display: none !important;
+  content: none !important;
+}
+
+
+.highlight-card {
+    background-color: #fa1f00;
+    color: white;
+}
+
+/* Container */
+.swiper {
+    padding-bottom: 2rem;
+    overflow: visible;
+    position: relative;
+    min-height: 340px;
+}
+
+/* Base card */
+.course-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+    will-change: transform;
+}
+
+/* Active (center) card */
+.swiper-slide-active .course-card {
+    background-color: #fa1f00 !important;
+    color: white;
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+/* Align prev/next cards on large screens (no tilt!) */
+@media (min-width: 992px) {
+    .swiper-slide-prev .course-card {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .swiper-slide-next .course-card {
+        text-align: right;
+        align-items: flex-end;
+    }
+}
+
+/* Mobile behavior: clean layout */
+@media (max-width: 991px) {
+
+    .swiper-slide-prev .course-card,
+    .swiper-slide-next .course-card,
+    .swiper-slide-active .course-card {
+        transform: none !important;
+        height: 320px;
+        width: 400px !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    .course-card {
+        padding: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Make text inside active card white */
+.swiper-slide-active .course-card p {
+    color: white;
+}
+
+/* Navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: #fa1f00;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Optional hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: #d91b00;
+}
+
+/* Team */
+
+.card-img {
+    width: 261px;
+    height: 144px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Navbar */
+
+.short-divider {
+    width: 60%;
+    margin: auto;
+}
+
+.dropdown-menu {
+    border-color: rgba(143, 129, 129, 0.16) !important;
+}
+
+.hr-theme {
+    border: none;
+    height: 1px;
+    background-color: rgba(143, 129, 129, 0.16);
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #F15A32, #8C191B) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+

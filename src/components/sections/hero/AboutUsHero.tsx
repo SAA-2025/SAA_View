@@ -1,5 +1,4 @@
 import React from "react";
-import heroImage from "../../../assets/images/about-us-hero-image.png";
 import Title from "../../others/Title";
 
 const AboutUsHero = () => {
@@ -40,10 +39,9 @@ const AboutUsHero = () => {
             </div>
 
             <img 
-              src={heroImage} 
+              src='/images/about-us-hero.png' 
               style={styles.heroImage} 
               alt="Hero"
-              // className="d-none d-lg-block" 
             />
           </div>
         </div>

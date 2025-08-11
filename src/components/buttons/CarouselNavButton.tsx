@@ -1,33 +1,31 @@
 import React from "react";
-import BasicReactProps from "../../lib/BasicReactProps";
-import "./style.css";
 
-interface CarouselNavButtonProps extends BasicReactProps {
-  direction: "next" | "prev";
-  href?: string;
-  [key: string]: any; 
+interface CarouselNavButtonProps {
+  direction: "left" | "right";
+  onClick?: () => void;
+  className?: string;
 }
 
-const CarouselNavButton = React.forwardRef<HTMLButtonElement, CarouselNavButtonProps>(
-  ({ direction, className = "", style, href, ...rest }, ref) => {
-    const baseClass = `custom-nav-btn custom-${direction}-btn ${className}`.trim();
-    const iconClass = `ri-arrow-${direction === "next" ? "right" : "left"}-long-line`;
+const CarouselNavButton: React.FC<CarouselNavButtonProps> = ({
+  direction,
+  onClick,
+  className = "",
+}) => {
 
-    if (href) {
-      return (
-        <a href={href} className={baseClass} style={style} {...rest}>
-          <i className={iconClass}></i>
-        </a>
-      );
-    }
+  return (
+    <button
+      className={`btn btn-theme rounded-circle d-flex align-items-center justify-content-center shadow ${className}`}
+      onClick={onClick}
+      style={{
+        width: "40px",
+        height: "40px",
+        zIndex: 10,
+      }}
+      aria-label={`Carousel ${direction} arrow`}
+    >
+      <i className={`ri-arrow-${direction}-long-line`}></i>
+    </button>
+  );
+};
 
-    return (
-      <button ref={ref} className={baseClass} style={style} {...rest}>
-        <i className={iconClass}></i>
-      </button> 
-    );
-  }
-);
-
-CarouselNavButton.displayName = "CarouselNavButton";
 export default CarouselNavButton;

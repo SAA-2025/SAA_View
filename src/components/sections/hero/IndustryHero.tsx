@@ -7,23 +7,28 @@ interface IndustryHeroProps {
 
 const IndustryHero = ({image, title}: IndustryHeroProps) => {
   return (
-    <section 
-        className="min-vh-100 d-flex align-items-center text-center"
-        style={{
-            background: `linear-gradient(rgba(0,0,0, 0.5),rgba(0,0,0, 0.3)), url(${image})`,
-            backgroundPosition: 'center',
-            backgroundSize: 'cover'
-        }}
-    >
-      <div className="container">
-        <div className="row">
-          <div className="col  d-flex flex-column align-items-center">
-            <h1 className="display-1 fw-bold text-white industry-title"><strong>{title}</strong></h1>
-            <Button text="გაიგე მეტი" href={`#blog`}></Button>
+    <section id="hero">
+        <div
+          className="container-fluid section-vh-95 d-flex flex-column align-items-center justify-content-center"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundBlendMode: "darken",
+            backgroundColor: "rgba(0,0,0,0.5)",
+          }}
+        >
+          <div className="row w-100">
+            <div className="col d-flex flex-column align-items-center justify-content-center">
+              <h1 className="text-center text-white display-1 fw-bolder">
+                {title}
+              </h1>
+              <Button text="გაიგე მეტი" href="#text" className="mt-4" />
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   )
 }
 

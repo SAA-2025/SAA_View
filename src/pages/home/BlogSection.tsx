@@ -1,6 +1,5 @@
 import Button from "../../components/buttons/Button";
 import BlogCarousel from "./BlogsCarousel"
-import '../../../style.css'
 
 const BlogSection = () => {
     return (

@@ -2,7 +2,6 @@ import React from "react";
 import Map from "../others/Map";
 import L, { LatLngExpression } from "leaflet";
 import Title from "../others/Title";
-import markerIcon from "../../assets/images/map-marker.png";
 
 
 const MapSection: React.FC = () => {
@@ -16,14 +15,14 @@ const MapSection: React.FC = () => {
   ]
 
   const iconProps = new L.Icon({
-    iconUrl: markerIcon,
+    iconUrl: '/images/map-marker.png',
     iconSize: [50, 40],
     iconAnchor: [25,40],
     popupAnchor: [0, -45]
   })
 
   return (
-    <section>
+    <section className="my-4">
       <div>
         <div className="container">
           <Title title=" - ოფისი" />

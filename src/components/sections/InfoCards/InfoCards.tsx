@@ -1,13 +1,6 @@
 import InfoCard from "../../cards/InfoCard";
+import { InfoCardsProps } from "../../../lib/infocard.props";
 
-interface InfoCardsProps {
-    infoCards: {
-        title: string,
-        body: string,
-        icon: string,
-        link: string
-    }[]
-}
 
 const InfoCards = ({infoCards}: InfoCardsProps) => {
     return (
